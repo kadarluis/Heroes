@@ -1,10 +1,11 @@
 <div class="card-columns">
-    <div class="card" *ngFor="let heroe of heroes">
+    <div class="card" *ngFor="let heroe of heroes; let i = index">
         <img [src]="heroe.img" class="card-img-top" alt="">
         <div class="card-body">
             <h5 class="card-title">{{ heroe.nombre }}</h5>
             <p class="card-text">{{ heroe.bio }}</p>
             <p class="card-text"><small class="text-muted">{{ heroe.aparicion }}</small></p>
-            <button type="button" class="btn btn-block btn-outline-dark">More info...</button>
+            <!-- <button type="button" class="btn btn-block btn-outline-dark">More info...</button> -->
+            <a class="btn btn-block btn-primary" [routerLink]="['/heroe', i]" role="button">More Info...</a>
         </div>
     </div>
