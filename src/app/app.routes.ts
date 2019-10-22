@@ -9,7 +9,7 @@ import { HeroeComponent } from './components/heroe/heroe.component';
 const ROUTES: Routes = [
     { path: 'home', component: HomeComponent },
     { path: 'about', component: AboutComponent },
-    { path: 'heores', component: HeroesComponent },
+    { path: 'heroes', component: HeroesComponent },
     { path: 'heroe/:id', component: HeroeComponent },
     { path: '**', pathMatch: 'full', redirectTo: 'home' }
 ];
