@@ -16,5 +16,5 @@ export class HeroesComponent implements OnInit {
     this.heroes = this._heroesService.getheroes();
     console.log(this.heroes);
   }
-  
+ 
 }
