@@ -18,7 +18,7 @@ export class BuscarComponent implements OnInit {
     this.activatedRoute.params.subscribe(params => {
       this.heroes = this._heroeService.buscarHeroes(params['termino']);
       console.log(this.heroes);
+
     });
   }
-
 }
